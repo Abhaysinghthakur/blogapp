@@ -1,0 +1,6 @@
+<div class="container" *ngIf="currentBlog != undefined">
+
+  {{currentBlog.blogId}},{{currentBlog.title}},{{currentBlog.description}}
+
+  <a [routerLink]="['/edit',currentBlog.blogId]">edit</a>
+</div>
